@@ -8,7 +8,6 @@ import Navbar from './Components/Navbar';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <Navbar/>
     <App />
   </div>
 );
