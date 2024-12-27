@@ -153,6 +153,7 @@ body {
 }
 
 /* Small screens (Phones, ≤480px) */
+/* Small screens (Phones, ≤480px) */
 @media (max-width: 480px) {
   .sidebar {
     width: 100%; /* Sidebar spans full width */
@@ -163,8 +164,8 @@ body {
 
   .sidebar .menu {
     display: flex;
-    flex-direction: column;
-    overflow-x: auto; /* Horizontal scrolling for menu items */
+    flex-direction: column; /* Horizontal layout for menu */
+    overflow-x: auto; /* Enable scrolling for menu items */
     white-space: nowrap;
     gap: 10px;
   }
@@ -172,11 +173,18 @@ body {
   .sidebar .menu li {
     margin: 0;
     padding: 8px;
-    flex-shrink: 0; /* Prevents shrinking of menu items */
+    flex-shrink: 0; /* Prevent shrinking of menu items */
   }
 
   .sidebar .task-summary {
-    display: none; /* Hide task summary on small screens */
+    display: block; /* Ensure it's visible */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sidebar .task-summary .chart {
+    width: 90%; /* Scale down for smaller screens */
+    margin: auto;
   }
 
   .main-content {
